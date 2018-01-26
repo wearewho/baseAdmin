@@ -22,6 +22,11 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+<!-- Theme style -->
+<link rel="stylesheet" href="{{ URL::asset('adminlte/css/AdminLTE.min.css') }}">  
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+      folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="{{ URL::asset('adminlte/css/skins/_all-skins.min.css') }}">
 
 <link href="{{ url('adminlte/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <link rel="stylesheet"

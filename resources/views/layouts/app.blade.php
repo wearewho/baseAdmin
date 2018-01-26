@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+    @php
+        $objs = session('data');
+    @endphp
+    
 <html lang="en">
-
 <head>
     @include('partials.head')
 </head>
-
 
 <body class="hold-transition skin-red fixed sidebar-mini">
 
