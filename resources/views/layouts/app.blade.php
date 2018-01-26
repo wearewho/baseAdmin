@@ -2,7 +2,7 @@
     @php
         $objs = session('data');
     @endphp
-    
+
 <html lang="en">
 <head>
     @include('partials.head')
@@ -42,6 +42,34 @@
                             </ul>
                         </div>
                     @endif
+
+                    <div class="box box-danger" >
+                        <div class="box-header with-border">
+                            <div class="row">
+                                <div class="col-md-1">     
+                                    <a href="http://www.yuasathai.com/" target="_blank">                 
+                                    <img class="img-responsive" width="40" style="margin-left:30px;" src="{{ url('images/pMTlogor1.jpg') }}" alt="YUASA" title="YUASA"> 
+                                    </a>
+                                </div>
+                                <div class="col-md-6">  
+                                    <b>Sales Analysis Portal V.1.0</b>
+                                    <br>
+                                    <b>Yuasa Battery (Thailand) Public Company Limited</b>
+                                </div>
+                                <div class="col-md-5" align="right">  
+                                    @php                      
+                                    $todate = date("d/m/Y", strtotime('-1 day'));
+                                    @endphp
+                                    <b>  Data as of:  27/12/2018 </b>
+                                    <br>
+                                    <b>  Sys Date:  {{ date("d/m/Y") }} </b>
+                                </div>
+                            </div> 
+                            <!-- /.box-tools -->
+                        </div>
+                        <!-- /.box-header -->
+                    </div>
+                    <!-- /.box -->
 
                     @yield('content')
 
