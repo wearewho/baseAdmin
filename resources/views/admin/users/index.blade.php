@@ -2,17 +2,16 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('global.users.title')</h3>
-    <p>
-        <a href="{{ route('admin.users.create') }}" class="btn btn-success">@lang('global.app_add_new')</a>
-    </p>
-
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            @lang('global.app_list')
+   
+   <div class="box box-danger">
+        <div class="box-header with-border">
+            <h3 class="box-title">@lang('global.app_list') @lang('global.users.title')</h3>
+            <div class="box-tools">
+                <a href="{{ route('admin.users.create') }}" class="btn btn-success">@lang('global.app_add_new')</a>                   
+            </div>
         </div>
 
-        <div class="panel-body table-responsive">
+        <div class="box-body table-responsive">
             <table class="table table-bordered table-striped {{ count($users) > 0 ? 'datatable' : '' }} dt-select">
                 <thead>
                     <tr>
