@@ -23,6 +23,7 @@ $this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.
 
 // Dashboard
 Route::get('/home', 'HomeController@index');
+Route::post('/convert', 'HomeController@convert')->name('convert');
 
 // Admin
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
